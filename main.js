@@ -118,7 +118,6 @@ function displayBestMovies(movies, container){
 }
 
 function nextSlide(slider){
-    console.log("Move to next slide");
     let slides = slider.getElementsByClassName("slide");
     for (let index=0; index<7; index ++){
     slides[index].style.translate = "-888px";
@@ -126,7 +125,6 @@ function nextSlide(slider){
 }
 
 function prevSlide(slider){
-    console.log("Move to next slide")
     let slides = slider.getElementsByClassName("slide");
     for (let index=0; index<7; index ++){
     slides[index].style.translate = "0px";
