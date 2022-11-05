@@ -20,7 +20,7 @@ body {
 }
 
 #logo {
-    scale: 40%;
+    transform: scale(0.4);
     position: absolute;
     filter: invert(100%);
 }
@@ -161,7 +161,6 @@ a:hover{
     width: 70%;
     padding-left: 5%;
     font-size: 25px;
-    justify-items: auto;
   }
   .modal-content .description p{
     margin-bottom: 10px;
@@ -192,7 +191,7 @@ a:hover{
     padding: 5px;
     border: none;
     border-radius: 50%;
-    z-index: 10px;
+    z-index: 2;
     cursor: pointer;
     background-color: rgb(0, 0, 0);
     font-size: 18px;
