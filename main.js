@@ -99,6 +99,7 @@ function displayBestMovies(movies, container){
         let img = document.createElement("img");
         img.className = "slide-img";
         img.src = movies[index]["image_url"];
+        img.alt = movies[index]["title"];
         img.addEventListener("error", function(event) {
             event.target.src = "img/not_found.jpg"
             event.onerror = null
@@ -136,7 +137,6 @@ function displayModal(movie){
     let span = document.getElementsByClassName("close")[0];
     modal.getElementsByTagName("img")[0].src = movie["image_url"];
     for (item of descriptionItems){
-        let container = document.getElementsByClassName("description")[0];
         let content = document.getElementById(item);
         content.textContent = item + ": " + movie[item];
     }
